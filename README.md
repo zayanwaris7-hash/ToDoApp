@@ -1,107 +1,16 @@
- ### Focus & Flow // Zen Productivity Dashboard
+# React + Vite
 
-Focus & Flow is a high-performance, minimalist task management dashboard designed to eliminate digital clutter. Built with a "Core OS" aesthetic, it leverages advanced Tailwind CSS techniques—including glassmorphism and luminescence—to provide a workspace that feels both futuristic and grounding.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## React Compiler
 
-## ✨ Key Features
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Luminescent UI:
- A custom-engineered "Soft Glow" theme using layered shadows and mesh gradients for a premium visual experience.
+## Expanding the ESLint configuration
 
-### State-Persistent Storage:
- Integrated localStorage synchronization ensuring your workflow remains uninterrupted across sessions.
-
-### Micro-Interactions: 
-Fluid transitions and scale-based animations that provide instant tactile feedback for every user action.
-
-### Context-Driven Architecture:
- Utilizes React Context API for clean, scalable state management across the component tree.
-
-### Responsive Control: 
-Optimized for "Flow" with inline editing and intuitive keyboard-friendly interactions.
-
-
----
-
-
-## 🛠️ Tech Stack
-
-### Frontend: React.js (Hooks & Context)
-
-### Styling: Tailwind CSS (JIT Engine)
-
-### Icons/Visuals: HeroIcons & Custom SVG Pathing
-
-### State: LocalStorage Persistence Layer
-
----
-
-
-## 🚀 Getting Started
-Follow these steps to deploy the dashboard locally:
-
-### 1. Clone the Repository
-Bash
-git clone https://github.com/your-username/focus-and-flow.git
-cd focus-and-flow
-### 2. Install Dependencies
-Bash
-npm install
-# or
-yarn install
-### 3. Run Development Server
-Bash
-npm run dev
-# or
-yarn dev
-The application will be available at http://localhost:5173.
-
-
----
-
-
-## 📂 Project Structure
-
-### Plaintext
-```text 
-src/
-├── Components/
-│   ├── InputBox.jsx    # Optimized task entry with radiant focus states
-│   └── TodoList.jsx     # Individual task rows with interactive hover controls
-├── Context/
-│   ├── TodoContext.js   # Centralized logic & state definitions
-│   └── TodoProvider.jsx # Context wrapper for global state access
-└── App.jsx              # Main layout shell and environment atmosphere
-```
-
----
-
-
-## 🎨 UI Methodology: "Advanced Glow"
-The project utilizes a specific design language centered on Elevation and Atmosphere:
-
-### Luminescence: 
-Components use rgba indigo shadows to simulate light bleed, creating depth without heavy dark borders.
-
-### Bento-Glass: 
-The main workbench uses a backdrop-blur-xl filter combined with a white/10 border-rim for a high-end glass effect.
-
-### Haptic Visuals: 
-Elements shrink by 2% (scale-98) when checked to visually signify "deactivation."
-
----
-
-
-## 📄 License
-Distributed under the MIT License. See LICENSE for more information.
-
----
-
-## 🤝 Contact
-
-Project Lead - @zayanwaris7-hash
-
-Project Link: https://github.com/zayanwaris7-hash/ToDoApp.git
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
